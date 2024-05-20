@@ -1,4 +1,4 @@
-# kickstart.nvim
+# kickstart.nvim / M64 personalized
 
 ## Introduction
 
