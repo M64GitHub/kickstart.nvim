@@ -110,7 +110,6 @@ vim.keymap.set('n', '<leader>v', '<cmd>vnew<CR>', { desc = 'New vertical spit' }
 vim.keymap.set('n', '<leader>mm', '<cmd>TermExec cmd=make direction=vertical<CR>', { desc = 'make' })
 -- vim.keymap.set('n', '<leader>mc', '<cmd>vsplit | terminal make<CR>', { desc = 'make clean' })
 vim.keymap.set('n', '<leader>mc', '<cmd>TermExec cmd="make clean" direction=vertical<CR>', { desc = 'make' })
-vim.keymap.set('n', '<leader>v', '<cmd>vnew<CR>', { desc = 'New vertical spit' })
 -- vim.keymap.set('n', '<leader>tt', '<cmd>vnew | terminal<CR>', { desc = 'New vertical spit with a terminal' })
 vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm direction=vertical size=80<CR>', { desc = 'New vertical spit with a terminal' })
 vim.keymap.set('n', '<C-t>', '<cmd>ToggleTerm direction=vertical size=80<CR>', { desc = 'New vertical spit with a terminal' })
@@ -804,6 +803,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
+  -- M64
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
