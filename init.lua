@@ -5,7 +5,7 @@ vim.g.mapleader = ','
 vim.g.maplocalleader = ','
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -105,8 +105,16 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- M64 additional keymaps
-
-vim.keymap.set('n', '<leader>v', '<cmd>vnew', { desc = 'New vertical spit' })
+vim.keymap.set('n', '<leader>v', '<cmd>vnew<CR>', { desc = 'New vertical spit' })
+-- vim.keymap.set('n', '<leader>mm', '<cmd>vsplit | terminal make<CR>', { desc = 'make' })
+vim.keymap.set('n', '<leader>mm', '<cmd>TermExec cmd=make direction=vertical<CR>', { desc = 'make' })
+-- vim.keymap.set('n', '<leader>mc', '<cmd>vsplit | terminal make<CR>', { desc = 'make clean' })
+vim.keymap.set('n', '<leader>mc', '<cmd>TermExec cmd="make clean" direction=vertical<CR>', { desc = 'make' })
+vim.keymap.set('n', '<leader>v', '<cmd>vnew<CR>', { desc = 'New vertical spit' })
+-- vim.keymap.set('n', '<leader>tt', '<cmd>vnew | terminal<CR>', { desc = 'New vertical spit with a terminal' })
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm direction=vertical size=80<CR>', { desc = 'New vertical spit with a terminal' })
+vim.keymap.set('n', '<C-t>', '<cmd>ToggleTerm direction=vertical size=80<CR>', { desc = 'New vertical spit with a terminal' })
+vim.keymap.set('n', '<c-g>', '<cmd>Neotree toggle position=right<CR>', { desc = 'Toggle Neotree' })
 vim.keymap.set('n', ';', ':', { desc = 'For my lazy fingers ;)' })
 
 -- [[ Basic Autocommands ]]
@@ -158,7 +166,6 @@ require('lazy').setup({
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
-
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
@@ -704,7 +711,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
+      vim.cmd.colorscheme 'tokyonight-moon'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
@@ -793,12 +800,12 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -806,6 +813,10 @@ require('lazy').setup({
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
   -- { import = 'custom.plugins' },
+
+  -- m64 additional plugins
+
+  { 'akinsho/toggleterm.nvim', version = '*', config = true },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
