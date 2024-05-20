@@ -11,12 +11,15 @@ A starting point for Neovim that is:
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
 ## Installation
+TL;DR
 
  - If you have an existing setup, I recommend a full clean:
    - back it up
    - rm -rf ~/.local/share/nvim
    - rm -rf ~/.config/nvim
-
+   - pull latest neovim sources and build current neovim from source
+   - clone this repo into ~/.config and rename it to nvim
+   
 
 ### Install Neovim
 
