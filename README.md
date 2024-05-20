@@ -12,6 +12,12 @@ A starting point for Neovim that is:
 
 ## Installation
 
+ - If you have an existing setup, I recommend a full clean:
+   - back it up
+   - rm -rf ~/.local/share/nvim
+   - rm -rf ~/.config/nvim
+
+
 ### Install Neovim
 
 Kickstart.nvim targets *only* the latest
