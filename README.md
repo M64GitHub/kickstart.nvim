@@ -34,6 +34,7 @@ Some of the shortcuts
    - <Ctrl-G>: toggle neo-tree
    - <Ctrl-P>: keyword fuzzy search
 ```   
+You can search for M64 in init.lua to find my changes.
 
 ### Install Neovim
 
