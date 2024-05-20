@@ -11,15 +11,29 @@ A starting point for Neovim that is:
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
 ## Installation
-TL;DR
+TL;DR  
 
+I have added toggleterm, neo-tree and C/C++ incl. DAP support mainly, as well as little tweaks and shortcuts to make autocomplete more natural (ie. let autocomplete accept with enter)   
+
+You get a full C/C++ IDE config incl DAP debugging support working out of the box, clangd based: lsp, linter, formatter, dap config and what kickstart.nvim normally does (see below). You should build gdb from source to have DAP support.
+
+```
  - If you have an existing setup, I recommend a full clean:
    - back it up
    - rm -rf ~/.local/share/nvim
    - rm -rf ~/.config/nvim
-   - pull latest neovim sources and build current neovim from source
+   - at latest now pull latest neovim sources and build current neovim from source,
+     - pull and compile gdb so you have version 14.1 with DAP support
    - clone this repo into ~/.config and rename it to nvim
-   
+   - start neovim, wait a bit and enjoy!
+Some of the shortcuts
+   - ;: : (thx renerocksai for this idea!)
+   - ,mm: make
+   - ,mc: make clean
+   - <Ctrl-t>: toggle persistent terminal
+   - <Ctrl-G>: toggle neo-tree
+   - <Ctrl-P>: keyword fuzzy search
+```   
 
 ### Install Neovim
 
