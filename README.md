@@ -23,8 +23,8 @@ TL;DR
    - back it up
    - rm -rf ~/.local/share/nvim
    - rm -rf ~/.config/nvim
-   - at latest now pull latest neovim sources and build current neovim from source,
-     - pull and compile gdb so you have version 14.1 with DAP support
+   - I strongly recommend to pull latest neovim sources and build current neovim from source
+   - I strongly recommend to pull and compile gdb so you have version 14.1 with DAP support
    - clone this repo into ~/.config and rename it to nvim
    - start neovim, wait a bit and enjoy!
 Some of the shortcuts
