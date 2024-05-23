@@ -822,7 +822,6 @@ require('lazy').setup({
   -- M64 additional plugins
   'tpope/vim-fugitive',
   'rcarriga/nvim-notify',
-
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
 }, {
   ui = {
