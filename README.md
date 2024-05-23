@@ -46,7 +46,6 @@ In nvim start Mason by entering `:Mason`, select and install the following packa
     ◍ clangd
     ◍ cpplint
     ◍ cpptools
-    ◍ lua-language-server lua_ls
     ◍ markdownlint
 ```
 to do so - hover over the corresponding package name from the list, and press `i` to install it. That's it! 
