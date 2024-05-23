@@ -41,7 +41,7 @@ You can search for M64 in init.lua to find my changes.
 
 To get the full blown C/C++ IDE experience:   
 
-When you have first started nvim after these steps, it autoinstalls and configures neovim. To get the full blown C/C++ IDE experience: have a look at `Mason`!
+When you have first started nvim after these steps, it autoinstalls almost all packages, and configures neovim. To get the full blown C/C++ IDE experience: have a look at `Mason`! (I do not want to interfere with its's installation mechanisms -> you need to manually follow this steps, to complete setup)
 
 In nvim start Mason by entering `:Mason`, select and install the following packages:
 
