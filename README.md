@@ -1,5 +1,5 @@
 <!-- # kickstart.nvim / M64 personalized -->
-# kickstart.nvim / M64 personalized
+# kickstart.nvim
 
 ## Introduction
 
