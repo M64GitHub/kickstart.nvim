@@ -26,6 +26,7 @@ You get a full C/C++ IDE config incl DAP debugging support working out of the bo
    - I strongly recommend to pull and compile gdb so you have version 14.1 with DAP support
    - clone this repo into ~/.config and rename it to nvim
    - start neovim, wait a bit and enjoy!
+
 Some of the shortcuts
    - ;: : (thx renerocksai for this idea!)
    - ,mm: make
