@@ -28,7 +28,8 @@ You get a full C/C++ IDE config incl DAP debugging support working out of the bo
    - start neovim, wait a bit and enjoy!
 
 Some of the shortcuts (my <leader> is comma)
-   - ;: : (thx renerocksai for this idea!)
+   - ;  : : (thx renerocksai for this idea!)
+   - ,, : fuzzy select / open file
    - ,v : open a new vsplit
    - ,mm: make
    - ,mc: make clean
