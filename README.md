@@ -27,8 +27,9 @@ You get a full C/C++ IDE config incl DAP debugging support working out of the bo
    - clone this repo into ~/.config and rename it to nvim
    - start neovim, wait a bit and enjoy!
 
-Some of the shortcuts
+Some of the shortcuts (my <leader> is comma)
    - ;: : (thx renerocksai for this idea!)
+   - ,v : open a new vsplit
    - ,mm: make
    - ,mc: make clean
    - <Ctrl-t>: toggle persistent terminal
