@@ -28,14 +28,14 @@ You get a full C/C++ IDE config incl DAP debugging support working out of the bo
    - start neovim, wait a bit and enjoy!
 
 Some of the shortcuts (my <leader> is comma)
-   - ;  : : (thx renerocksai for this idea!)
-   - ,, : fuzzy select / open file
-   - ,v : open a new vsplit
-   - ,mm: make
-   - ,mc: make clean
-   - <Ctrl-t>: toggle persistent terminal
-   - <Ctrl-G>: toggle neo-tree
-   - <Ctrl-P>: keyword fuzzy search
+   - ;        : : (thx renerocksai for this idea!)
+   - ,,       : fuzzy select / open file
+   - ,v       : open a new vsplit
+   - ,mm      : make (in persistent terminal)
+   - ,mc      : make clean (in persistent terminal)
+   - <Ctrl-t> : toggle persistent terminal
+   - <Ctrl-G> : toggle neo-tree
+   - <Ctrl-P> : keyword fuzzy search
 ```   
 You can search for M64 in init.lua to find my changes.  
 
