@@ -1,5 +1,6 @@
 <!-- # kickstart.nvim / M64 personalized -->
 # kickstart.nvim
+My neovim config, based on kickstart.
 
 ## Introduction
 
