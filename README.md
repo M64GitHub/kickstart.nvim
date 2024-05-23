@@ -14,7 +14,7 @@ A starting point for Neovim that is:
 ## Installation
 TL;DR  
 
-I have added toggleterm, neo-tree, vim-fugitive, notify, telescope-env and C/C++ incl. DAP support mainly, as well as little tweaks and shortcuts to make autocomplete more natural (ie. let autocomplete accept with enter)
+I have added toggleterm, neo-tree, vim-fugitive, notify, scrollview, telescope-env and C/C++ incl. DAP support mainly, as well as little tweaks and shortcuts to make autocomplete more natural (ie. let autocomplete accept with enter)
 You get a full C/C++ IDE config incl DAP debugging support working out of the box, clangd based: lsp, linter, formatter, dap config and what kickstart.nvim normally does (see below). You should build gdb from source to have DAP support.
 
 ```
